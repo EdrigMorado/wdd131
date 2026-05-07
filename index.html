@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Edgar Garcia Morado</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals. Edgar Garcia Morado. Course home page with personal information, Mexico facts, web development resources, Canvas, LinkedIn, scripture link, and final project folder.">
+    <meta name="author" content="Edgar Garcia Morado">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank"
+                rel="noopener noreferrer">Scripture</a>
+            <a href="project/">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Edgar Garcia Morado</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+
+            <div class="about-me">
+                <div>
+                    <p>
+                        My name is Edgar Garcia Morado. I am from Mexico City, Mexico. I love sports, technology, and learning new things. I am
+                        studying Software Development at BYU–Idaho with an emphasis on cybersecurity.
+                    </p>
+
+                    <p>
+                        I am excited to learn more about web development, strengthen my technical skills, and build a strong foundation to
+                        become a better professional in offensive cybersecurity.
+                    </p>
+                </div>
+
+                <img src="images/profile.webp" alt="Photo of Edgar Garcia Morado" width="250" height="300">
+            </div>
+
+            <h3>Mexico</h3>
+
+            <div class="country">
+                <figure>
+                    <img src="images/mexico-city.webp" alt="Image representing Mexico" width="300" height="180"
+                        loading="lazy">
+                    <figcaption>Mexico</figcaption>
+                </figure>
+
+                <p>
+                    Mexico is a country full of history, traditions, and cultural diversity. It is known for its food, music, architecture,
+                    natural landscapes, and historic places. Its people, celebrations, and strong identity make Mexico a unique and
+                    welcoming place.
+                </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+
+            <ul>
+                <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
+                </li>
+                <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
+                <li><a href="https://web.dev/" target="_blank" rel="noopener noreferrer">web.dev</a></li>
+                <li><a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">HTML Validator</a>
+                </li>
+                <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">CSS
+                        Validator</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Edgar Garcia Morado | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
