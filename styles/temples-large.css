@@ -1,0 +1,35 @@
+@media screen and (min-width: 640px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        grid-column: auto;
+        margin-top: 0;
+    }
+
+    nav a {
+        padding: 0.75rem 1rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    figure img {
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+}

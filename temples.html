@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Edgar Garcia Morado - Responsive temple album page using HTML, CSS, and JavaScript">
+    <meta name="author" content="Edgar Garcia Morado">
+
+    <title>WDD 131 - Temple Album - Edgar Garcia Morado</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h2>Temple Album</h2>
+
+        <button id="menu" aria-label="Open navigation menu"></button>
+
+        <nav id="navigation">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="temple-grid">
+            <figure>
+                <img src="images/san-diego-temple.webp" alt="San Diego California Temple" width="400" height="250">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/salt-lake-temple.webp" alt="Salt Lake Temple" width="400" height="250">
+                <figcaption>Salt Lake Utah</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/provo-city-center-temple.webp" alt="Provo City Center Temple" width="400" height="250">
+                <figcaption>Provo City Center</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/mexico-city-temple.webp" alt="Mexico City Mexico Temple" width="400" height="250">
+                <figcaption>Mexico City Mexico</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/rome-temple.webp" alt="Rome Italy Temple" width="400" height="250">
+                <figcaption>Rome Italy</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/paris-temple.webp" alt="Paris France Temple" width="400" height="250">
+                <figcaption>Paris France</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/tokyo-temple.webp" alt="Tokyo Japan Temple" width="400" height="250">
+                <figcaption>Tokyo Japan</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/madrid-temple.webp" alt="Madrid Spain Temple" width="400" height="250">
+                <figcaption>Madrid Spain</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/washington-dc-temple.webp" alt="Washington D.C. Temple" width="400" height="250">
+                <figcaption>Washington D.C.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> Edgar Garcia Morado | Mexico
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
