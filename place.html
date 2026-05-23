@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals place assignment about Mexico by Edgar Garcia Morado.">
+    <meta name="author" content="Edgar Garcia Morado">
+    <title>WDD 131 - Place: Mexico - Edgar Garcia Morado</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Mexico</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2 class="visually-hidden">Mexico landscape</h2>
+
+            <picture class="hero-picture">
+                <source media="(min-width: 700px)" srcset="images/mexico-large.webp">
+                <img src="images/mexico-small.webp" alt="Natural landscapes and wildlife representing Mexico" width="800" height="1200">
+            </picture>
+
+            <section class="info-card data-card" aria-labelledby="data-title">
+                <h2 id="data-title">Data</h2>
+
+                <dl>
+                    <dt>Area:</dt>
+                    <dd>1,964,375 sq km</dd>
+
+                    <dt>Population:</dt>
+                    <dd>126,014,024</dd>
+
+                    <dt>Capital:</dt>
+                    <dd>Mexico City</dd>
+
+                    <dt>Languages:</dt>
+                    <dd>Spanish, Indigenous languages</dd>
+
+                    <dt>Currency:</dt>
+                    <dd>Mexican Peso</dd>
+
+                    <dt>Time Zone:</dt>
+                    <dd>UTC-8 to UTC-5</dd>
+
+                    <dt>Calling Code:</dt>
+                    <dd>+52</dd>
+
+                    <dt>Internet TLD:</dt>
+                    <dd>.mx</dd>
+                </dl>
+            </section>
+
+            <section class="info-card weather-card" aria-labelledby="weather-title">
+                <h2 id="weather-title">Weather</h2>
+
+                <img class="weather-icon" src="images/weather-partly-cloudy.svg" alt="Partly cloudy weather icon"
+                    width="80" height="80">
+
+                <dl>
+                    <dt>Temperature:</dt>
+                    <dd><span id="temperature"></span> °C</dd>
+
+                    <dt>Conditions:</dt>
+                    <dd>Partly Cloudy</dd>
+
+                    <dt>Wind:</dt>
+                    <dd><span id="wind"></span> km/h</dd>
+
+                    <dt>Wind Chill:</dt>
+                    <dd><span id="wind-chill"></span></dd>
+                </dl>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Edgar Garcia Morado | Mexico</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
