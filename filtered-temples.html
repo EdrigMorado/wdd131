@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Edgar Garcia Morado - Filtered temple album page using HTML, CSS, and JavaScript">
+    <meta name="author" content="Edgar Garcia Morado">
+
+    <title>WDD 131 - Filtered Temple Album - Edgar Garcia Morado</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h2>Temple Album</h2>
+
+        <button id="menu" aria-label="Open navigation menu"></button>
+
+        <nav id="navigation">
+            <a href="#" data-filter="home" class="active">Home</a>
+            <a href="#" data-filter="old">Old</a>
+            <a href="#" data-filter="new">New</a>
+            <a href="#" data-filter="large">Large</a>
+            <a href="#" data-filter="small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="page-title">Home</h1>
+
+        <section class="temple-grid" id="temple-cards" aria-live="polite"></section>
+    </main>
+
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> Edgar Garcia Morado | Mexico
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
