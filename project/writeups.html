@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Cybersecurity lab write-ups from Restless Minds, including DockerLabs, TryHackMe, Hack The Box, and other controlled learning platforms.">
+    <meta name="author" content="Edgar Garcia Morado">
+    <title>Restless Minds | Labs & Write-Ups</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <div class="nav-wrapper">
+            <a class="brand" href="index.html" aria-label="Restless Minds home page">
+                <span class="brand-mark">RM</span>
+                <span class="brand-text">Restless Minds</span>
+            </a>
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="writeups.html">Write-Ups</a>
+                <a href="services.html">Services</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="labs-hero">
+            <p class="eyebrow">Restless Minds Labs</p>
+            <h1>Cybersecurity lab write-ups and practical notes.</h1>
+            <p>
+                This section documents labs completed in controlled environments such as DockerLabs,
+                TryHackMe, Hack The Box, and other learning platforms. The purpose is to share methodology,
+                techniques, and security lessons from ethical hacking practice.
+            </p>
+        </section>
+
+        <section class="labs-layout">
+            <aside class="labs-sidebar" aria-label="Lab filters">
+                <div class="sidebar-block">
+                    <h2>Platforms</h2>
+                    <div id="platform-filters" class="sidebar-filter-list"></div>
+                </div>
+
+                <div class="sidebar-block">
+                    <h2>Difficulty</h2>
+                    <div id="difficulty-filters" class="sidebar-filter-list"></div>
+                </div>
+
+                <div class="sidebar-block">
+                    <h2>Progress</h2>
+                    <p><span id="lab-count">0</span> labs shown</p>
+                    <p><span id="read-count">0</span> labs marked as read</p>
+                    <button id="reset-lab-filters" class="small-action-button" type="button">Reset Filters</button>
+                </div>
+            </aside>
+
+            <section class="labs-main">
+                <div class="labs-heading-row">
+                    <div>
+                        <p class="eyebrow">Index</p>
+                        <h2>Available Write-Ups</h2>
+                    </div>
+
+                    <div class="search-wrapper">
+                        <label for="lab-search">Search labs</label>
+                        <input type="search" id="lab-search" name="lab-search"
+                            placeholder="Search by name, tag, or platform">
+                    </div>
+                </div>
+
+                <div id="lab-cards" class="lab-card-grid" aria-live="polite"></div>
+
+                <article id="lab-detail" class="lab-detail-panel" aria-live="polite">
+                    <p class="eyebrow">Selected Lab</p>
+                    <h2>Select a lab to read the write-up.</h2>
+                    <p>
+                        Choose any lab card to display the full write-up, including port scanning, exploitation notes, and privilege escalation steps.
+                    </p>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Restless Minds</p>
+            <p id="last-modified"></p>
+            <p><a href="references.html">References</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

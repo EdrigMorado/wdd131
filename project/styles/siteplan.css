@@ -1,10 +1,13 @@
 :root {
-    --primary-color: #0b132b;
-    --secondary-color: #00b4d8;
-    --light-color: #f4f7f9;
-    --text-color: #1f2933;
+    --background-color: #0d0f14;
+    --surface-color: #16181d;
+    --surface-soft: #20232b;
+    --accent-purple: #8b7cff;
+    --accent-blue: #4f7cff;
+    --text-light: #f5f7fb;
+    --muted-text: #b8c7dc;
+    --border-color: #2a2d35;
     --white-color: #ffffff;
-    --border-color: #d9e2ec;
 }
 
 * {
@@ -14,16 +17,17 @@
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    color: var(--text-color);
-    background-color: var(--light-color);
+    color: var(--text-light);
+    background-color: var(--background-color);
     line-height: 1.6;
 }
 
 header {
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
     text-align: center;
-    color: var(--white-color);
-    background-color: var(--primary-color);
+    color: var(--text-light);
+    background: linear-gradient(135deg, #0d0f14, #17122b);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .logo {
@@ -32,8 +36,12 @@ header {
     margin: 0 auto 1rem;
     display: grid;
     place-items: center;
-    font-size: 2.5rem;
-    border: 3px solid var(--secondary-color);
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 0.08rem;
+    color: var(--text-light);
+    background-color: var(--surface-color);
+    border: 3px solid var(--accent-purple);
     border-radius: 50%;
 }
 
@@ -49,13 +57,13 @@ h1 {
 }
 
 h2 {
-    color: var(--primary-color);
-    border-bottom: 3px solid var(--secondary-color);
+    color: var(--text-light);
+    border-bottom: 3px solid var(--accent-purple);
     padding-bottom: 0.4rem;
 }
 
 h3 {
-    color: var(--primary-color);
+    color: var(--text-light);
 }
 
 main {
@@ -67,9 +75,18 @@ main {
 section {
     margin: 1.5rem 0;
     padding: 1.5rem;
-    background-color: var(--white-color);
+    background-color: var(--surface-color);
     border: 1px solid var(--border-color);
     border-radius: 12px;
+}
+
+p,
+li {
+    color: var(--muted-text);
+}
+
+strong {
+    color: var(--text-light);
 }
 
 ul {
@@ -83,46 +100,55 @@ ul {
 }
 
 .color-card {
+    min-height: 180px;
     padding: 1rem;
     border-radius: 10px;
     border: 1px solid var(--border-color);
 }
 
-.primary-color {
-    color: var(--white-color);
-    background-color: var(--primary-color);
+.background-color {
+    background-color: #0d0f14;
 }
 
-.primary-color h3 {
-    color: var(--white-color);
+.surface-color {
+    background-color: #16181d;
 }
 
-.secondary-color {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+.purple-color {
+    background-color: #8b7cff;
 }
 
-.light-color {
-    color: var(--primary-color);
-    background-color: var(--light-color);
+.purple-color h3,
+.purple-color p {
+    color: #0d0f14;
+}
+
+.text-color-card {
+    color: #0d0f14;
+    background-color: #f5f7fb;
+}
+
+.text-color-card h3,
+.text-color-card p {
+    color: #0d0f14;
 }
 
 .wireframe {
     margin: 1rem 0 2rem;
     padding: 1rem;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--accent-purple);
     border-radius: 12px;
-    background-color: var(--light-color);
+    background-color: var(--surface-soft);
 }
 
 .wire-box {
     margin: 0.5rem;
     padding: 1rem;
     text-align: center;
-    font-weight: 600;
-    color: var(--primary-color);
-    background-color: var(--white-color);
-    border: 2px dashed var(--secondary-color);
+    font-weight: 700;
+    color: var(--text-light);
+    background-color: var(--surface-color);
+    border: 2px dashed var(--accent-blue);
     border-radius: 8px;
 }
 
@@ -146,8 +172,13 @@ ul {
 footer {
     padding: 1rem;
     text-align: center;
-    color: var(--white-color);
-    background-color: var(--primary-color);
+    color: var(--text-light);
+    background-color: var(--surface-color);
+    border-top: 1px solid var(--border-color);
+}
+
+footer p {
+    color: var(--text-light);
 }
 
 @media screen and (min-width: 700px) {
@@ -160,7 +191,7 @@ footer {
     }
 
     .color-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .wire-row {

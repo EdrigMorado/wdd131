@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Request cybersecurity audits, security awareness training, camera installation, or gate access control services from Restless Minds.">
+    <meta name="author" content="Edgar Garcia Morado">
+    <title>Restless Minds | Services</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <div class="nav-wrapper">
+            <a class="brand" href="index.html" aria-label="Restless Minds home page">
+                <span class="brand-mark">RM</span>
+                <span class="brand-text">Restless Minds</span>
+            </a>
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="writeups.html">Write-Ups</a>
+                <a href="services.html">Services</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="services-hero centered-header">
+            <p class="eyebrow">Protecting People, Businesses, and Communities.</p>
+            <h1>Security services for the Real World.</h1>
+            <p>
+                Protect your digital environment and physical spaces with practical cybersecurity reviews,
+                smart camera support, and gate access solutions.
+            </p>
+        </section>
+
+        <section class="services-section">
+            <div class="section-heading centered-heading">
+                <h2>Our Services</h2>
+                <p>
+                    Each service is designed to provide clear recommendations, practical improvements,
+                    and a professional support process.
+                </p>
+            </div>
+
+            <div class="service-grid">
+                <article class="service-feature-card">
+                    <div class="service-icon">◎</div>
+                    <h3>Cybersecurity Audit</h3>
+                    <p>
+                        Comprehensive security review of networks, devices, Wi-Fi, routers, smart devices, passwords, accounts, and overall
+                        security posture. Includes practical recommendations to reduce risk and improve digital protection.
+                    </p>
+                </article>
+
+                <article class="service-feature-card">
+                    <div class="service-icon">▣</div>
+                    <h3>Security Awareness Training</h3>
+                    <p>
+                        Cybersecurity workshops and presentations designed for small businesses and teams. Covers common attack techniques,
+                        phishing, password security, incident response, and practical habits that help reduce everyday cyber risks.
+                    </p>
+                </article>
+
+                <article class="service-feature-card">
+                    <div class="service-icon">◉</div>
+                    <h3>Camera Installation</h3>
+                    <p>
+                        Support for security camera placement, installation planning, mobile viewing, recording systems, and monitoring
+                        configuration.
+                    </p>
+                </article>
+
+                <article class="service-feature-card">
+                    <div class="service-icon">◇</div>
+                    <h3>Gate Access Control</h3>
+                    <p>
+                        Programming and compatibility support for gate or garage remote controls
+                        used in private communities and small businesses.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="section-heading centered-heading">
+                <h2>How It Works</h2>
+            </div>
+
+            <div class="process-grid">
+                <article class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Send Your Request</h3>
+                    <p>Fill out the form with your project details.</p>
+                </article>
+
+                <article class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Scope Review</h3>
+                    <p>
+                        Your request is reviewed to understand the scope and support needed. We will contact you
+                        within 48–72 hours.
+                    </p>
+                </article>
+
+                <article class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Service Planning</h3>
+                    <p>Once the proposal is accepted, work begins.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="request-section simple-request-section">
+            <div class="request-card">
+                <div class="request-heading">
+                    <h2>Request a Security Service</h2>
+                    <p>
+                        Complete the form with your project details. Your request will be reviewed to define the
+                        scope and next steps.
+                    </p>
+                </div>
+
+                <form id="service-form" class="service-form" method="get" action="services.html">
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="organization-name">Organization or Community Name <span>*</span></label>
+                            <input type="text" id="organization-name" name="organization-name" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="contact-name">Contact Name <span>*</span></label>
+                            <input type="text" id="contact-name" name="contact-name" autocomplete="name" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email">Email <span>*</span></label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel">
+                        </div>
+
+                        <div class="form-field full-width">
+                            <label for="service-type">Service Type <span>*</span></label>
+                            <select id="service-type" name="service-type" required>
+                                <option value="">Select an option</option>
+                                <option value="cybersecurity">Cybersecurity Audit</option>
+                                <option value="training">Security Awareness Training</option>
+                                <option value="cameras">Camera Installation</option>
+                                <option value="gate">Gate Access Control</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field full-width">
+                            <label for="message">Project Description <span>*</span></label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="Briefly describe the property, devices, network, cameras, gate system, training need, or security concern."
+                                required></textarea>
+                        </div>
+
+                        <div class="form-field full-width">
+                            <label for="budget">Estimated Budget <span>*</span></label>
+                            <select id="budget" name="budget" required>
+                                <option value="">Select an option</option>
+                                <option value="basic">Basic</option>
+                                <option value="standard">Standard</option>
+                                <option value="advanced">Advanced</option>
+                                <option value="not-sure">Not sure yet</option>
+                            </select>
+                        </div>
+
+                        <label class="checkbox-label full-width">
+                            <input type="checkbox" id="authorization" name="authorization" required>
+                            I confirm that I am authorized to request support for this property, device, network, or
+                            system.
+                        </label>
+                    </div>
+
+                    <button class="button primary-button form-button" type="submit">Submit Request</button>
+
+                    <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Restless Minds</p>
+            <p id="last-modified"></p>
+            <p><a href="references.html">References</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn about Restless Minds, a cybersecurity project focused on helping small businesses and microbusinesses access digital protection services and practical security education.">
+    <meta name="author" content="Edgar Garcia Morado">
+    <title>Restless Minds | About</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <div class="nav-wrapper">
+            <a class="brand" href="index.html" aria-label="Restless Minds home page">
+                <span class="brand-mark">RM</span>
+                <span class="brand-text">Restless Minds</span>
+            </a>
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="writeups.html">Write-Ups</a>
+                <a href="services.html">Services</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="about-hero">
+            <p class="eyebrow">Get to know us</p>
+            <h1>whoami</h1>
+            <p>
+                Discover who we are, our mission, and the people who make Restless Minds possible.
+            </p>
+        </section>
+
+        <section class="about-mission-card">
+            <div class="about-icon">⚡</div>
+            <h2>What is Restless Minds?</h2>
+            <p>
+                Restless Minds is a cybersecurity and digital protection company focused on helping small
+                businesses and microbusinesses access practical cybersecurity services without unnecessary
+                complexity. Many smaller organizations need protection, but they do not always have the budget,
+                knowledge, or technical staff required to manage digital risks on their own.
+            </p>
+            <p>
+                The project was born from the desire to help others stay safer in a world where digital threats
+                are increasingly common. The goal is to provide clear guidance, practical security audits,
+                camera and access control support, and educational resources that help people understand how
+                to protect their systems, accounts, and physical spaces.
+            </p>
+        </section>
+
+        <section class="founder-section">
+            <div class="section-heading centered-heading">
+                <h2>Who makes up Restless Minds?</h2>
+                <p>
+                    Restless Minds is currently led by one person with a strong focus on learning, discipline,
+                    and practical cybersecurity work.
+                </p>
+            </div>
+
+            <article class="founder-card">
+                <div class="founder-visual">
+                    <div class="founder-avatar">EGM</div>
+                </div>
+
+                <div class="founder-content">
+                    <p class="role-pill">Founder & CEO</p>
+                    <h2>Edgar Garcia Morado</h2>
+                    <p class="founder-subtitle">
+                        Cybersecurity Enthusiast • Software Development Student • Self-Taught Hacker
+                    </p>
+
+                    <p>
+                        Software Development student at BYU-Idaho, cybersecurity consultant, security auditor, and 
+                        pentester focused on helping small businesses and microenterprises improve their digital protection.
+                    </p>
+
+                    <p>
+                        Developer of PortHunter, a Bash-based tool for port discovery and service enumeration with Nmap. 
+                        He builds practical skills through labs, write-ups, technical documentation, and hands-on security projects.
+                    </p>
+
+                    <p>
+                        Currently leads Restless Minds, focused on practical cybersecurity services, digital protection, 
+                        and security education. Founder of the project.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="certifications-section">
+            <div class="section-heading centered-heading">
+                <h2>Professional Certifications</h2>
+                <p>
+                    Professional certifications validate the holder's knowledge and skills through recognized organizations, 
+                    demonstrating that they have been tested against rigorous cybersecurity standards.
+                </p>
+            </div>
+
+            <div class="certification-grid">
+                <article class="certification-card">
+                    <div class="certification-icon">🎯</div>
+                    <h3>eJPTv2</h3>
+                    <p>eLearnSecurity Junior Penetration Tester</p>
+                    <p class="certification-provider">INE Security</p>
+                    <a href="https://certs.ine.com/fea207cf-5b89-40b3-9681-42b5a47d816e#acc.SGhyo7Kt" target="_blank" rel="noopener">
+                        Verify Certification
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stat-card">
+                <h2>100+</h2>
+                <p>Resolved Labs and Machines</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>10+</h2>
+                <p>Security Audits for Small Businesses and Microbusinesses</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>1</h2>
+                <p>Custom Security Tool Developed</p>
+            </div>
+        </section>
+
+        <section class="project-highlight-section">
+            <div class="project-highlight-card">
+                <div>
+                    <p class="eyebrow">Project Highlight</p>
+                    <h2>PortHunter</h2>
+                    <p>
+                        Bash-based cybersecurity tool developed to support port discovery and service enumeration workflows with Nmap. 
+                        Created as a practical project to automate and improve the efficiency of the enumeration phase during a penetration test. 
+                        Part of the hands-on learning approach behind Restless Minds.
+                    </p>
+
+                    <div class="project-actions">
+                        <a class="button primary-button" href="https://github.com/EdrigMorado/portHunter"
+                            target="_blank" rel="noopener">
+                            View PortHunter on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="terminal-box" aria-label="PortHunter terminal preview">
+                    <p><span>$</span> porthunter --target 192.168.1.10</p>
+                    <p><span>[+]</span> Discovering open ports...</p>
+                    <p><span>[+]</span> Running targeted service scan...</p>
+                    <p><span>[+]</span> Report ready.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Restless Minds</p>
+            <p id="last-modified"></p>
+            <p><a href="references.html">References</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
